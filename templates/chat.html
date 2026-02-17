@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>CareerBot</h2>
+        <ul>
+            <li>Embedded Jobs</li>
+            <li>Resume Help</li>
+            <li>Interview Prep</li>
+            <li>Roadmaps</li>
+        </ul>
+    </aside>
+
+    <main class="chat-area">
+        <div id="chat-box"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask your career question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </main>
+</div>
+
+{% endblock %}

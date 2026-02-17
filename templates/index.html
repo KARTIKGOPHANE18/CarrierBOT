@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CareerBot – AI Career Assistant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+    <h1>🤖 CareerBot</h1>
+
+    <div id="chat-box">
+        <div class="message bot">
+            Hi! 👋 I’m your AI Career Assistant. Ask me anything about careers.
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
+
